@@ -6,7 +6,7 @@ import { CheckoutPage } from '../pages/CheckoutPage';
 import { users } from '../utils/testdata';
 
 test('End-to-end checkout flow', async ({ page }) => {
-    await page.goto('https://www.saucedemo.com/');
+    await page.goto('/');
     await new LoginPage(page).login(users.valid.username, users.valid.password);
 
     const products = new ProductsPage(page);

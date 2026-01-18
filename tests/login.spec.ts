@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage';
+import { LoginPage } from '../models/pages/LoginPage';
 import { users } from '../utils/testdata';
 
 test('Valid login should succeed', async ({ page }) => {
